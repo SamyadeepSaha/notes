@@ -1,0 +1,123 @@
+\section{Linear Programming Problem}
+
+\subsection{Duality}
+Every LPP called the primal is associated with another LPP called dual.
+Either of the problems is primal with the other one as dual. The optimal
+solution of either problem reveals the information about the optimal
+solution of the other.
+
+Let the primal problem be,
+$$ Max Z_{x} = c_{1}x_{1} + c_{2}x_{2} + \ldots + c_{n}x_{n} $$
+
+Subject to restrictions
+$$ a_{11}x_{1} + a_{12}x_{2} + \ldots + a_{1n}x_{n} \leq b_{1} $$
+$$ a_{21}x_{1} + a_{22}x_{2} + \ldots + a_{2n}x_{n} \leq b_{2} $$
+$$ \vdots $$
+$$ a_{m1}x_{1} + a_{m2}x_{2} + \ldots + a_{mn}x_{n} \leq b_{m} $$
+
+and
+$$ x_{1} \geq 0, x_{2} \geq 0, x_{n} \geq 0 $$
+
+The corresponding dual is defined as
+$$ Min Z_{w} = b_{1}w_{1} + b_{2}w_{2} + \ldots + b_{n}w_{n} $$
+
+Subjebt to restribtions
+$$ a_{11}w_{1} + a_{12}w_{2} + \ldots + a_{1n}w_{n} \leq c_{1} $$
+$$ a_{21}w_{1} + a_{22}w_{2} + \ldots + a_{2n}w_{n} \leq c_{2} $$
+$$ \vdots $$
+$$ a_{m1}w_{1} + a_{m2}w_{2} + \ldots + a_{mn}w_{n} \leq c_{m} $$
+
+and
+$$ w_{1} \geq 0, w_{2} \geq 0, w_{n} \geq 0 $$
+
+\subsubsection{Matrix Notation}
+
+\begin{multicols}{2}
+
+\underline{Primal}
+$$ Max Z_{x} = CX $$
+
+Subject to
+$$ AX \leq b and X \geq 0 $$
+
+\underline{Dual}
+$$ Min Z_{w} = b^{T}W $$
+
+Subject to
+$$ A^{T}W \geq C^{T} and W \geq 0 $$
+
+\end{multicols}
+
+\subsection{Important characteristics of Duality}
+\begin{enumerate}
+    \item Dual of dual is primal.
+    \item If either the primal or dual problem has a solution then the
+        other also has a solution and their optimum values are equal.
+    \item If any of the two problems has a infeasible solution, then the
+        value of the objective function of the other is unbounded.
+    \item The value of the objective function for any feasible solution
+        of the primal is less than the value of the objective function
+        for any feasible solution of the dual.
+    \item If either the primal or dual has an unbounded solution, then
+        the solution to the other problem is infeasible.
+    \item If the primal has a feasilble solution, but the dual does not
+        have then the primal will not have a finite optimum solution and
+        vice versa.
+    \item The final simplex table giving optimal solution of the primal
+        also contains optimal solution of its dual in itself.
+\end{enumerate}
+
+\subsection{Advantages and Applications of Duality}
+\begin{enumerate}
+    \item Sometimes dual problem solution may be easier than primal
+        solution, particularly when the number of decision variables is
+        considerably less than slack / surplus variables.
+    \item In the areas like economics, it is highly helpful in obtaining
+        future decision in the activities being programmed.
+    \item In physics, it is used in parallel circuit and series circuit
+        theory.
+    \item In game theory, dual is employed by column player who wishes
+        to minimize his maximum loss while his opponent i.e. Row player
+        applies primal to maximize his mimimum gains. However, if one
+        problem is solved, the solution for other also can be obtained
+        from the simplex tableau.
+    \item When a problem does not yield any solution in primal, it can
+        be verified with dual.
+    \item Economic interpretations can be made and shadow prices can be
+        determined enabling the managers to take further decisions.
+\end{enumerate}
+
+\subsection{Steps for a Standard Primal Form}
+\begin{steps}
+\item Change the objective function to Maximization form.
+\item If the constraints have an inequality sign \lq$ \geq $\rq then
+    multiply both sides by $ -1 $ and convert the inquality sign to
+    \lq$ \leq $\rq.
+\item If the constraints have an \lq$ = $\rq sign then replace it by two
+    constraints involving the inequalities going in opposite directions.
+    For example $ x_{1} + 2x_{2} = 4 $ is written as
+    $$ x_{1} + 2x_{2} \leq 4 $$
+    $ x_{1} + 2x_{2} \leq 4 $ (using step2) $ - x_{1} - 2x_{2} \leq -4 $
+\item Every unrestricted variable is replaced by the difference of two
+    non-negative variables.
+\item We get the standard primal form of the given LPP in which.
+    \begin{itemize}
+        \item All constraints have \lq$ \leq $\rq sign, where the
+            objective function is of maximization form.
+        \item All constraints have \lq$ \geq $\rq sign, where the
+            objective function is of minimization form.
+    \end{itemize}
+\end{steps}
+
+\subsection{Rules for Converting any Primal into its Dual}
+\begin{enumerate}
+    \item Transpose the rows and columns of the constraint co-efficient.
+    \item Transpose the co-efficient $ (c_{1}, c_{2}, \ldots c_{n}) $ of
+        the objective function and the right side constants $ (b_{1},
+        b_{2}, \ldots b_{n}) $.
+    \item Change the inequalities from \lq$ \leq $\rq to \lq$ \geq $\rq 
+        sign.
+    \item Minimize the objective function instead of maximizing it.
+\end{enumerate}
+
+\subsection{Example Problems}

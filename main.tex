@@ -1,0 +1,30 @@
+\documentclass[a4paper, titlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage{multicol}
+
+% Step enumerate items
+\usepackage{enumitem}
+\newlist{steps}{enumerate}{1}
+\setlist[steps, 1]{itemindent = 0.75cm, label = Step \arabic*:}
+
+\title{My Notes}
+\author{Samyadeep Saha}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\include{lpp.tex}
+
+\include{hashing.tex}
+
+\include{networking.tex}
+
+\end{document}
+
+
+
+

@@ -1,0 +1,89 @@
+\section{Networking}
+
+\subsection{Classes of IPv4 addresses}
+In the IPv4 IP address space, there are five classes A, B, C, D and E.
+Each class has a specific range of IP addresses. Primarily, class A, B
+and C are used by the majority of devicese on the Internet. Class D and
+E are for special uses.
+
+\subsubsection{Class A}
+Class A addresses are for networks with large number of total hosts.
+Class A allows for 126 networks by using the first octet for the network
+ID. The first bit in this octet, is always zero. The remaining seven
+bits in this octet complete the network ID. The 24 bits in the remaining
+three octets represent the hosts ID and allows for approximately 17
+million hosts per network. Class A network number values begin at 1 and
+end at 127.
+\begin{itemize}
+\item Public IP range: 1.0.0.0 to 127.0.0.0 (First octet value range
+from 1 to 127)
+\item Private IP range: 10.0.0.0 to 10.255.255.255
+\item Subnet mask: 255.0.0.0 (8 bits)
+\item Number of networks: 126
+\item Number of hosts per network: 16,777,214
+\end{itemize}
+
+\subsubsection{Class B}
+Class B addresses are for medium to large sized networks. Class B allows
+for 16,384 networks by using the first two octets for the network ID.
+The first two bits in the first octet are always 1 0. The remaining six
+bits, together with the second octet, complete the network ID. The 16
+bits in the third and fourth octet represent host ID and allows for
+approximately 65,000 hosts per network. Class B network number values
+begin at 128 and end at 191.
+\begin{itemize}
+    \item Public IP range: 128.0.0.0 to 191.255.0.0, first octet value
+        range from 128 to 191
+    \item Private IP Range: 172.16.0.0 to 172.31.255.255
+    \item Subnet Mask: 255.255.0.0(16 bits)
+    \item Number of networks: 16,382
+    \item Number of hosts per Network: 65,534
+\end{itemize}
+
+\subsubsection{Class C}
+Class C addresses are used in small local area networks(LANs). Class C
+allows for approximately 2 million networks by using the first three
+octets for the network ID. In a class C IP address, the first three bits
+of the first octet are always 1 1 0. And the remaining 21 bits of first
+three octets complete the network ID. The last octet (8 bits) represent
+the host ID and allows for 254 hosts per network. Class C network number
+values begins at 192 and end at 223.
+\begin{itemize}
+    \item Public IP range: 192.0.0.0 to 223.255.255.0, first octet value
+        range from 192 to 223
+    \item Private IP range: 192.168.0.0 to 192.168.255.255
+    \item Special IP range: 127.0.0.1 to 127.255.255.255
+    \item Subnet mask: 255.255.255.0(24 bits)
+    \item Number of networks: 2,097,150
+    \item Number of hosts per network: 254
+\end{itemize}
+
+\subsubsection{Class D}
+Class D IP addresses are not allocated to hosts and are used for
+multicasting. Multicasting allows a single host to send a single stream
+of data to thousands of hosts across the Internet at the same time. It
+is often used for audio and video streaming, such as IP-based cable TV
+networks. Another example is the delivery of real-time stock market data
+from one source to many brokerage companies.
+\begin{itemize}
+    \item Range: 224.0.0.0 to 239.255.255.255, first octet value range
+        from 224 to 239
+    %\item Number of network: N/A
+    %\item Number of hosts per network: Multicasting
+\end{itemize}
+
+\subsubsection{Class E}
+Class E IP addresses are not allocated to hosts and are not available
+for general use. Theses are reserved for research purposes.
+\begin{itemize}
+    \item Range: 240.0.0.0 to 255.255.255.255, first octet value range
+        from 240 to 255
+\end{itemize}
+
+\subsubsection{Special IP Addresses}
+IP range: 127.0.0.1 to 127.255.255.255 are network testing addresses
+(also referred to as loop-back addresses). These are virtual IP address,
+in that they cannot be assigned to a device. Specially, the IP
+127.0.0.1 is often used to troubleshoot network connectivity issues
+using the ping command. It tests a computer's TCP/IP network software
+driver to ensure it is working properly.
