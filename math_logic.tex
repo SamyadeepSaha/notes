@@ -1,0 +1,41 @@
+\section{Mathematic Logic}
+
+\subsection{Propositional and Predicate Logic}
+
+\subsection{Normal and Principle Forms}
+
+\subsubsection{Disjunctive Normal Forms(DNF)}
+A formula which is equivalent to a given formula and which consists of a
+sum of elementary products is called a disjunctive normal form of given
+formula. \textbf{Example} $ (p \land \neg q) \lor (q \land r) \lor (\neg
+p \land q \land \neg r) $. The DNF of formula is not unique.
+
+\subsubsection{Conjunctive Normal Form(CNF)}
+A formula which is equivalent to a given formula and which consists of a
+product of elementary sums is called a conjunctive normal form of given
+formula. \textbf{Example} $ (p \lor \neg q) \land (q \lor r) \land (\neg
+p \lor q \lor \neg r) $. The CNF of formula is not unique. If every
+elementary sum in CNF is tautology, then given formula is also
+tautology.
+
+\subsubsection{Principle Disjunctive Normal Form (PDNF)}
+An equivalent formula consisting of disjunctions of minterms only is
+called the principle disjunctive normal form of the formula. It is also
+known as \textbf{sum of products} canonical form. \textbf{Example} $ (p
+\land \neg q \land \neg r) \lor (p \land \neg q \land r) \lor ( \neg p
+\land \neg q \land \neg r) $. The minterm consists of conjuctions in
+which each statement variable or its negation, but not both, appears
+only once. The minterms are written down by including the variable if
+its truth value is T and its negation if its truth value is F.
+
+\subsubsection{Principle Conjunctive Normal Form (PCNF)}
+An equivaletn formula consisting of conjunctions of maxterms only is
+called the principle conjunctive normal form of the formula. It is also
+known as \textbf{product of sums} canonical form. \textbf{Example} $ (p
+\lor \neg q \lor \neg r) \land (p \lor \neg q \lor r) \land (\neg p \lor
+\neg q \lor \neg r) $. The maxterm consists of disjunctions in which
+each variable or its negation, but not both, appears only once. The dual
+of a minterm is called maxterm. Each of the maxterm has the truth value
+F for exactly one combination of the truth values of the variables. The
+maxterms are written down by including the variable if its truth value
+is F and its negation if its truth value is T.
