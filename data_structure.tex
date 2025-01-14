@@ -4,19 +4,25 @@
 Array is a collection of items of the same variable type that are stored
 at contiguous memory location. It is one of the most popular and simple
 data structures used in programming.
+
 \textbf{Basic terminologies of Array}
+
 \begin{itemize}
-\item Array Index: In an array, elements are identified by their
-indexes. Array index starts from 0.
-\item Array Element: Elements are items stored in an array and can be
-accessed by their index.
-\item Array Length: The length of an array is determined by the number
-of elements it can contain.
+    \item Array Index: In an array, elements are identified by their
+        indexes. Array index starts from 0.
+    \item Array Element: Elements are items stored in an array and can
+        be accessed by their index.
+    \item Array Length: The length of an array is determined by the
+        number of elements it can contain.
 \end{itemize}
-\textbf{Memory representation of Array}
+
+\textbf{Memory representation of Array:}
+
 In an array, all the elements are stored in contiguous memory locations.
 So, if we intitialize an array, of elements.
-\textbf{Purpose of arrays}
+
+\textbf{Purpose of arrays:}
+
 Assume there is a class of five students and if we have to keep records
 of their marks and examination then, we can do this by declaring five
 variables individual and keeping track of records but what if the number
@@ -30,12 +36,14 @@ variables. The idea of an array is to represent many instances in one
 variable.
 
 \textbf{Types of Arrays}
+
 \begin{itemize}
     \item On the basis of Size
     \item On the basis of Dimensions
 \end{itemize}
 
 \textbf{Types of Arrays on the basis of Size:}
+
 \begin{enumerate}
     \item Fixed Size Arrays:
         We Cannot alter or update the size of this array. Here only a
@@ -55,6 +63,7 @@ variable.
 \end{enumerate}
 
 \textbf{Types of Arrays on the basis of Dimensions:}
+
 \begin{enumerate}
     \item One-dimensional Array: You can imagine a 1d array as a row,
         where elements are stored one after another.
@@ -70,4 +79,28 @@ variable.
                 contains three dimensions, so it can be considered an
                 array of two-dimensional arrays.
         \end{enumerate}
+\end{enumerate}
+
+\textbf{Application of Array Data Structure:}
+
+Array mainly have advantages like random access and cache friendliness
+over other data structures that make them useful.
+Below are some applications of arrays.
+\begin{enumerate}
+    \item Storing and accessing data: Arrays store elements in a
+        specific order and allow constant-time O(1) access to any
+        element.
+    \item Searching: If data in array is storted, we can search an item
+        in O(log n) time. We can also find floor(), ceiling(), kth
+        smallest, kth largest, etc efficiently.
+    \item Matrices: Two-dimensional arrays are used for matrices in
+        computations like graph algorithms and image processing.
+    \item Implementing other data structures: Arrays are used as the
+        underlying data structure for implementing stacks and queues.
+    \item Dynamic programming: Dynamic programming algorithms often use
+        arrays to store intermediate results of subproblems in order to
+        solve a larger problem.
+    \item Data Buffers: Arrays serve as data buffers and queues,
+        temporarily storing incoming data like network packets, file
+        streams, and database results before processing.
 \end{enumerate}
