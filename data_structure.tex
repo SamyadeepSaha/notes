@@ -104,3 +104,39 @@ Below are some applications of arrays.
         temporarily storing incoming data like network packets, file
         streams, and database results before processing.
 \end{enumerate}
+
+
+\subsection{Heap Data Structure}
+A Heap is a complete binary tree data structure that satisfies the heap
+property: for every node, the value of its children is greater than or
+equal to its own value. Heaps are usually sused to implement priority
+queues, where tha smallest (or largest) element is always at the root of
+the tree.
+
+\subsubsection{Binary Heap}
+A Binary Heap is a complete binary tree which is used to store data
+efficiently to get the max or min element based on its type. A Binary
+Heap is either Min Heap or Max Heap. In a Min Binary Heap, the key at
+the root must be minimum among all keys present in Binary Heap. The same
+property must be recursively true for all nodes in Binary Tree. Max
+Binary Heap is similar to Min Heap.
+
+\textbf{How is Binary Heap represented?}
+A Binary Heap is a Complete Binary Tree. A binary heap is typically
+represented as an array.
+\begin{enumerate}
+    \item The root element will be arr[0].
+    \item The below table shows indices of other nodes for the ith node,
+        i.e., arr[i]:
+        \begin{center}
+            \begin{tabular}{|c|c|}
+                \hline
+                arr[(i-1)/2] & Returns the parent node \\
+                \hline
+                arr[(2*i)+1] & Returns the left child node \\
+                \hline
+                arr[(2*i)+2] & Return the right child node \\
+                \hline
+            \end{tabular}
+        \end{center}
+\end{enumerate}
